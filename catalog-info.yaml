@@ -1,1 +1,12 @@
-
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: democomponent
+  title: Sample Service # optional, human readable component name
+  description: My first Backstage catalog item.
+  annotations:
+    github.com/project-slug: Eswarr07/Test
+spec:
+  type: service
+  owner: user: Eswarr07
+  lifecycle: experimental
