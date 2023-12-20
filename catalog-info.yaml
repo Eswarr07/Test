@@ -7,6 +7,6 @@ metadata:
   annotations:
     github.com/project-slug: Eswarr07/Test
 spec:
-  type: service
-  owner: user: Eswarr07
+  type: library
+  owner: CNCF
   lifecycle: experimental
