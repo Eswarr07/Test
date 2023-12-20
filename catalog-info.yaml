@@ -9,3 +9,4 @@ spec:
  type: service
  owner: Eswar
  version: v1.0.0
+ lifecycle: experimental
