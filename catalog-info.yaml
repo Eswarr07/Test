@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: backstage_vault
   annotations:
-    vault.io/secrets-path: backstage
+    vault.io/secrets-path: kv/data/backstage
     #vault.io/secrets-engine: secret
 spec:
  type: service
