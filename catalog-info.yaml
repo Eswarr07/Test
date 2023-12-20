@@ -1,11 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: democomponent
-  title: Sample Service # optional, human readable component name
-  description: My first Backstage catalog item.
+  name: backstage_vault
   annotations:
-    github.com/project-slug: Eswarr07/Test
+    vault.io/secrets-path: my-app/password
+    vault.io/secrets-engine: secrets
 spec:
   type: library
   owner: CNCF
