@@ -4,7 +4,6 @@ metadata:
   name: backstage_vault
   annotations:
     vault.io/secrets-path: secret/data/backstage
-    vault.io/secrets-engine: secrets
 spec:
  type: service
  owner: Eswar
