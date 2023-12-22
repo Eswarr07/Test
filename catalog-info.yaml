@@ -3,8 +3,8 @@ kind: Component
 metadata:
   name: backstage_vault
   annotations:
-    vault.io/secrets-path: kv/backstage
-    #vault.io/secrets-engine: kv
+    vault.io/secrets-path: kv/data/backstage
+    vault.io/secrets-engine: kv
 spec:
  type: service
  owner: Eswar
