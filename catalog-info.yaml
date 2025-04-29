@@ -10,23 +10,4 @@ spec:
   lifecycle: experimental
   owner: user:eswarr07
   definition:
-    $text: |
-      openapi: 3.0.0
-      info:
-        title: My Test API
-        version: 1.0.0
-        description: A sample API definition
-      paths:
-        /hello:
-          get:
-            summary: Returns Hello World
-            responses:
-              '200':
-                description: Successful response
-                content:
-                  application/json:
-                    schema:
-                      type: object
-                      properties:
-                        message:
-                          type: string
+    $text: ./openapi.yaml
