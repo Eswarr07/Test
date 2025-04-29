@@ -1,11 +1,32 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
-  name: backstage_vault
-  annotations:
-    vault.io/secrets-path: kv/data/backstage
-    vault.io/secrets-engine: kv
+  name: my-test-api
+  description: A sample API for testing
+  tags:
+    - sample
 spec:
- type: service
- owner: Eswar
- lifecycle: experimental
+  type: openapi
+  lifecycle: experimental
+  owner: user:eswarr07
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: My Test API
+        version: 1.0.0
+        description: A sample API definition
+      paths:
+        /hello:
+          get:
+            summary: Returns Hello World
+            responses:
+              '200':
+                description: Successful response
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        message:
+                          type: string
